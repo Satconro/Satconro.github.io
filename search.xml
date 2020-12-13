@@ -51,4 +51,44 @@
     <url>/2020/12/05/test/</url>
     <content><![CDATA[]]></content>
   </entry>
+  <entry>
+    <title>IDEA配置JUnit</title>
+    <url>/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/</url>
+    <content><![CDATA[<h1 id="第一步：添加插件"><a href="#第一步：添加插件" class="headerlink" title="第一步：添加插件"></a>第一步：添加插件</h1><blockquote>
+<p>IDEA 版本：2020.2</p>
+</blockquote>
+<p>​    添加插件：File → Settings → Plugins，安装 JUnit和JUnitGenerator V2.0两个插件</p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213202007019.png" alt="image-20201213202007019"></p>
+<h1 id="第二步：修改设置"><a href="#第二步：修改设置" class="headerlink" title="第二步：修改设置"></a>第二步：修改设置</h1><p>​    <strong>Output Path</strong>是生成的测试类的默认保存路径，横向窗口中的<strong>JUnit3和JUnit4</strong>是生成测试类的模板文件，这里更改一下默认模板，其他的采用默认的就好</p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213202802010.png" alt="image-20201213202802010"></p>
+<h1 id="第三步：更改项目结构"><a href="#第三步：更改项目结构" class="headerlink" title="第三步：更改项目结构"></a>第三步：更改项目结构</h1><p>添加外部库：File → Project Structure → Libraries</p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213203839550.png" alt="image-20201213203839550"></p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213204004710.png" alt="image-20201213204004710"></p>
+<p>在idea安装目录下bin中，找到</p>
+<blockquote>
+<p>\IntelliJ IDEA 2020.2\lib\hamcrest-core-1.3.jar</p>
+<p>\IntelliJ IDEA 2020.2\lib\junit-4.12.jar</p>
+<p>\IntelliJ IDEA 2020.2\lib\junit.jar</p>
+</blockquote>
+<p>这三个包引入到项目中</p>
+<h1 id="第四步：生成测试类"><a href="#第四步：生成测试类" class="headerlink" title="第四步：生成测试类"></a>第四步：生成测试类</h1><p>​    鼠标右键点击需要测试的类，选择 generate → test，完成测试类配置</p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213204313514.png" alt="image-20201213204313514"></p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213204341341.png" alt="image-20201213204341341"></p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213204725444.png" alt="image-20201213204725444"></p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213204902288.png" alt="image-20201213204902288"></p>
+<p>​    </p>
+<p>​    然后编写测试类，运行即可</p>
+<p>​    运行的界面如下所示：</p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213205334800.png" alt="image-20201213205334800"></p>
+<p>​    必要时，也可以手动设置JUnit的源文件路径：</p>
+<p><img src="/2020/12/13/IDEA%E9%85%8D%E7%BD%AEJUnit/image-20201213205436113.png" alt="image-20201213205436113"></p>
+]]></content>
+      <categories>
+        <category>软件测试</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+        <tag>JUnit</tag>
+      </tags>
+  </entry>
 </search>
